@@ -1,0 +1,57 @@
+// -var $t = new Date().getTime()
+-var $t = '1933'
+
+html
+    head
+        meta( charset='utf-8')
+        meta(name='viewport', content='maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0')
+        meta(name="format-detection" content="telephone=no")
+        meta(name="keywords" content="e")
+        meta(name="description" content="新葡京品牌")
+        //link(rel='stylesheet', href='../css/app.css')
+        link(rel='stylesheet', href='https://xpj.imagebei.com/hd/brand/css/app.css?v#{$t}')
+        script(type="text/javascript", src='https://xpj.imagebei.com/hd/brand/js/vue.min.js')
+        title 新葡京品牌
+    body
+        #app(:step="tabSet1+1", v-cloak)
+
+            .logo(@click="backHome()")
+            .banner(:style="'background-image:url('+imgCdn+'/banner'+(tabSet1+1)+''+ps+'.jpg)'")
+            .menu
+                .warp
+                    a(v-for="(it,ind) in menu" @click="setTab(1,ind)") {{it}}
+            .main(:style="'background-image:url('+imgCdn+'/bg'+(tabSet1+1)+''+ps+'.jpg)'")
+                .warp
+                    .title
+                        h1 {{menu[tabSet1]}}
+                        h5 {{menu_en[tabSet1].toLocaleUpperCase()}}
+
+                    .items(v-if="tabSet1<=4")
+                        .list(v-for="(it,ind) in items[tabSet1]")
+                            //.img(:style="'background-image:url('+imgCdn+'/img'+(tabSet1*4+(ind+1))+'.jpg)'" @click="order")
+                            .img(:style="'background-image:url('+imgCdn+'/img'+tabSet1+ '' + (ind+1)+'.jpg)'" @click="order")
+                            h3 {{it.head}}
+                            p {{it.cont}}
+                    .advan(v-else)
+                        .head
+                            h4 {{advan.title}}
+                            ul
+                                li(v-for="(it,ind) in advan.items", :class="ind==tabSet2?'active':''", :style="'background-image:url('+imgCdn+'/menu'+(ind+1)+'.png)'" @click="setTab(2,ind)")
+                        .cont
+                            .top
+                                .card(:style="'background-image:url('+imgCdn+'/card'+(tabSet2+1)+'.png)'")
+                                p {{advan.items[tabSet2].desc}}
+                            ul
+                                li(v-for="(it,ind) in advan.items[tabSet2].list")
+                                    .ico(:class="'icon'+it.icon")
+                                    h3 {{it.head}}
+                                    p {{it.cont}}
+
+
+
+
+
+
+        script(type="text/javascript", src='https://xpj.imagebei.com/hd/brand/js/index.js?v#{$t}')
+        //script(type="text/javascript" src="../js/index.js")
+

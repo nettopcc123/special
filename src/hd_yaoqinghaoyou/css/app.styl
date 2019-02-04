@@ -1,0 +1,152 @@
+@charset "UTF-8"
+html
+    font-size 100px
+body
+    margin 0
+    font-family -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
+
+
+$c1=#d14722
+$c2=#fff8f1
+$c3=#cf7c27
+$c4=#efcd86
+$c5=#000
+$c6=#ffd0be
+$c7=#e2dcdc26
+
+.yhhd
+    font-size .18rem
+    max-width 19.2rem
+    overflow-x hidden
+    margin 0 auto
+    line-height 1.4
+    background: url(../img/banner.jpg) top center no-repeat;
+    padding 0 0 .2rem 0
+    color $c5
+    *
+        box-sizing border-box
+        margin 0
+    .hd-banners
+        padding-top: 20%;
+        padding-bottom: 60%;
+    .hd-wrap
+        margin: -54% auto 0;
+        max-width 12rem
+        color #bf854a
+        font-size .24rem
+        padding-top .8rem
+        .hd-tit
+            text-align left
+            font-size .2rem
+            padding .6rem .4rem .5rem
+            color $c5
+            margin-bottom 1rem
+            border 2px solid $c2
+            border-radius .2rem
+            position relative
+            background: $c2
+            font-weight: 440;
+            &:nth-of-type(2)
+                margin-bottom .4rem
+            p
+                line-height .36rem
+                &:after
+                    display block
+                    clear both
+                    content ""
+                    visibility hidden
+                    height 0
+            .p1
+                text-align: center;
+                width: 10rem;
+                margin: 0 auto;
+            .img-box
+                text-align center
+                .img
+                    margin: .4rem auto;
+                .img1
+                    width 4.5rem;
+                    height .8rem;
+                    display: block;
+                    background: url("../img/til_s_1.png") no-repeat
+                    background-size: contain;
+                .img2
+                    width 8.9rem;
+                    height 2.4rem;
+                    display: block;
+                    background: url("../img/til_s_2.png") no-repeat
+                    background-size: contain;
+                .img3
+                    width 4.5rem;
+                    height .8rem;
+                    display: block;
+                    background: url("../img/til_s_3.png") no-repeat
+                    background-size: contain;
+            .span1
+                color $c1
+                font-weight: bold;
+                font-size: .25rem;
+            .cot-box
+                border: 1px solid #ffd0be;
+                padding: .6rem .4rem .5rem;
+                h1
+                    position: initial;
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 3.7rem;
+                .p1
+                    width: 9rem;
+                    margin: .2rem auto;
+                table
+                    color $c5
+                    width 100%
+                    text-align center
+                    border-color $c7
+                    margin .2rem 0
+                    font-size .2rem
+                    border-collapse　collapse
+                    tr:nth-child(1)
+                        background $c6
+                
+                    td
+                        padding .1rem .2rem
+                        width: 16.6%;
+                        &.d
+                            color #fd2731
+                            font-weight bold
+                        .p2
+                            font-size: .15rem;
+                            color: #797777;
+                .last
+                    color $c2
+                    font-size .22rem
+                .left
+                    width .5rem
+                    display block
+                    float left
+                .right
+                    width 90%
+                    line-height .36rem
+                    display block
+                    float left
+        ul　
+            li
+                list-style-type none
+                line-height .4rem
+
+        h1
+            width 3rem
+            line-height .5rem
+            text-align center
+            position absolute
+            left 50%
+            top -.26rem
+            margin-left -1.5rem
+            background $c1
+            font-size .25rem
+            color $c2
+            border 2px solid $c2
+            border-radius 2rem
+            font-weight: inherit;
+@import "mob"
+

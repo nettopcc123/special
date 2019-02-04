@@ -1,0 +1,353 @@
+html
+    background-color #020201
+body
+    margin 0
+    background #020202
+    font-size .16rem
+    line-height 1.8
+*
+    box-sizing border-box
+[v-cloak]
+    display none
+.warp
+    max-width 12rem
+    margin 0 auto
+
+.logo
+    width 4rem
+    height 1.3rem
+    position absolute
+    z-index 300
+    top 0
+    left 50%
+    margin 0 0 0 -2rem
+    background rgba(0,0,0,.7) url("../img/logo.svg?v2") no-repeat center/80% auto
+    border-radius 0 0 .2rem .2rem
+    box-shadow 0 0 .1rem rgba(250,230,140,.9)
+    cursor pointer
+p
+    height 1.5rem
+    text-align justify
+    text-indent 1em
+    &::before
+        content ''
+        display inline-block
+        width .1rem
+        height .1rem
+        background #dbaf51
+        border-radius 50%
+        position absolute
+        margin .5em 0 0 -1em
+
+.banner
+    height 3.5rem
+
+.menu
+    color #ae9660
+    font-size .2rem
+    height .8rem
+    line-height .8rem
+    background rgba(0,0,0,.8)
+    position relative
+    z-index 9
+    text-align center
+    a
+        display block
+        float left
+        width 20%
+        cursor pointer
+        transition .1s
+        &:hover
+            opacity .8
+
+
+.main
+    min-height 13rem
+    background-position center top
+    background-repeat no-repeat
+    background-size 100% auto
+
+.banner
+    background-position center
+    background-repeat no-repeat
+.img
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    border-radius .05rem
+    height 4rem
+    position relative
+    cursor pointer
+    overflow hidden
+
+.items
+    padding .5rem 0 0rem
+.list
+    &:nth-child(7)
+        padding-bottom 0rem
+    h3,p
+        padding-bottom .3rem
+        overflow hidden
+    h3
+        margin 0
+        color #fbc95d
+        font-size .24rem
+        font-weight normal
+        line-height .6rem
+        height .6rem
+    p
+        color #fff
+        margin 0
+    .img:hover::before
+        content ''
+        position absolute
+        z-index 2
+        width 100%
+        height 100%
+        background rgba(0,0,0,.6) url("../img/link-bg.png") no-repeat center
+
+.title
+    text-align center
+    margin-top -.1rem
+    height 1rem
+    padding .05rem 12%
+    position relative
+    h1,h5
+        margin 0
+        position relative
+        z-index 5
+        font-weight 300
+        line-height 1.3
+    h1
+        color #fff
+        font-size .46rem
+        &::after
+        &::before
+            content ''
+            position absolute
+            background #dbaf51
+            width 20%
+            height 1px
+            top 48%
+        &::after
+            left 0
+        &::before
+            right 0
+    h5
+        color #dbaf51
+        font-size .18rem
+        line-height .4rem
+    &::after
+    &::before
+        content ''
+        position absolute
+        background #dbaf51
+        left 50%
+    &::before
+        top 0
+        height .7rem
+        width 2.8rem
+        transform skew(-15deg) translateX(-50%)
+    &::after
+        width 4.8rem
+        top .1rem
+        height .5rem
+        opacity .5
+        transform skew(-30deg) translateX(-50%)
+
+    .cont
+        margin .5rem 0
+        padding .4rem
+        position relative
+        background #333 url("../img/bg5x.jpg") no-repeat center/cover
+        border-radius .1rem
+        border 1px solid #685731
+        min-height 4rem
+        &::before
+            content ''
+            position absolute
+            border .2rem solid transparent
+            border-top-color #dbaf51
+            top 0
+            left 50%
+            margin-left -.1rem
+        .top
+            padding-left 2rem
+            p
+                min-height 1rem
+                border-bottom 1px solid #685731
+    .card
+        left .4rem
+        position absolute
+        width 2rem
+        height 1rem
+        background-repeat no-repeat
+        background-size contain
+    .cont
+        ul
+            margin 0
+            padding .4rem 0 0 0
+            list-style none
+            li
+                position relative
+                padding-left .8rem
+
+            h3
+                margin 0
+                color #fbc95d
+                font-size .2rem
+                font-weight normal
+                line-height .3rem
+                padding-bottom .1rem
+            p
+                color #fff
+                margin 0
+                font-size .14rem
+    .ico
+        position absolute
+        width .7rem
+        height .7rem
+        left -.1rem
+        top .1rem
+        background-size contain
+        background-repeat no-repeat
+        background-position center
+
+
+.is_pc
+    body
+        padding-bottom 1.5rem
+    .menu
+        position fixed
+        z-index 9
+        width 100%
+        bottom 0
+        left 0
+    .banner
+        height 9rem
+        background-size auto 100%
+    .items
+        //padding-bottom .7rem
+        &:after
+            content ''
+            display block
+            height 0
+            clear both
+            visibility hidden
+    .list
+        width 48%
+        float left
+        margin-top .3rem
+        &:nth-child(2n)
+            margin-left 4%
+        &:only-child
+            width 100%
+
+        &:nth-child(2)
+            p
+                min-height 1.2rem
+        &:nth-child(6)
+            p
+                min-height 1.5rem
+
+        p
+            height auto
+
+
+
+
+
+
+    .advan
+        .head
+            margin 0 10%
+        .cont
+            ul
+                &:after
+                    content ''
+                    display table
+                    clear both
+                li
+                    height 1.6rem
+                    float left
+                    width 30%
+                    &:nth-child(3n-1)
+                        margin 0 5%
+                    &:nth-child(14)
+                        width 48%
+                    &:hover
+                        opacity .9
+                        .ico
+                            opacity .6
+        .ico
+            transition .2s
+
+$head = 1.2rem
+
+.is_mob
+    body
+        font-size .2rem
+    .menu-fixed
+        .banner
+            margin-bottom 1rem
+        .menu
+            position fixed
+            top 0
+            z-index 10
+            width 100%
+
+    .logo
+        display none
+    .menu
+        height 1rem
+        line-height 1rem
+        font-size .22rem
+    .banner
+        background-size 100%
+    .title
+        display none
+    .items
+        padding .3rem
+
+        .list
+                padding-bottom .3rem
+            p
+                height auto
+
+    .advan
+        .head
+            margin 0
+            h4
+                padding .3rem
+                font-size .22rem
+            ul
+                margin-top -.5rem
+                padding .1rem
+                background-size 105% auto
+        .card
+            left .3rem
+        .cont
+            margin .2rem
+            padding .2rem
+            ul
+                li
+                    margin-bottom .7rem
+                h3
+                    font-size .24rem
+                p
+                    font-size .2rem
+            .top
+                p
+                    font-size .2rem
+
+for $i in 1..5
+    #app[step=\" {$i}\"]
+        a:nth-child( {$i})
+            background #d1bc6f linear-gradient(-20deg,rgba(0,0,0,.3),rgba(255,255,255,.2))
+            color #fff
+
+
+//for $i in 1.24
+//    [class*=\" icon{$i}\"]
+//        background url("../img/ic"+$i+".svg") no-repeat center /cover
+

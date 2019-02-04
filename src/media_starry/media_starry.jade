@@ -1,0 +1,140 @@
+-var ur = ''
+-var ur = 'https://xpj.imagebei.com/hd/hijack_starry/'
+
+html
+    head
+        meta( charset='utf-8')
+        meta(name='viewport', content='maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0')
+        meta(name="format-detection" content="telephone=no")
+        link(rel='stylesheet', href='#{ur}css/app.css?v=16')
+        title 澳门新葡京x999.com
+        script(type='text/javascript' src="#{ur}js/jq.js")
+        script(type="text/javascript" src="#{ur}js/md5.js")
+        script(type='text/javascript' src="#{ur}js/com.js?v=16")
+        style.
+            a[href*='cnzz'] {
+                display: none;
+            }
+    body
+
+        mixin vd
+            ul.inp(type="0", yzm="0")
+                li
+                    b 账&nbsp;&nbsp;&nbsp;&nbsp;号：
+                    input.unm(type="text" maxlength="12" placeholder="请输入用户名(6-12位小写字母及数字）")
+                li
+                    b 密&nbsp;&nbsp;&nbsp;&nbsp;码：
+                    input.pwd(type="password" maxlength="12" placeholder="请输入密码(6-12位字母及数字组合)")
+                li
+                    b 手机号：
+                    input.tel(type="tel" maxlength="11" placeholder="请输入手机号码")
+                li
+                    b 验证码：
+                    input.yzm(type="tel" maxlength="6" placeholder="请输入短信验证码")
+                    .btn(onclick="sendCode(this)") 发送验证码
+                li
+                    b 验证码：
+                    input.yzt(type="text" maxlength="6" placeholder="请输入图形验证码")
+                    img.yzmtp(onclick="getCapt()")
+            .tips
+        .bg
+            .xp
+                .reg.clearfix
+                    .right
+                        .hd-logo.first(onclick="goo('',1)")
+                        h1 注册好礼
+
+                        p
+                            span 今日限时特惠，凡今日成功注册会员，有最高享受
+                            i 999999元
+                            span 注册优惠。澳门新葡京官网
+                            a(onclick="goo('',1)") x999.com
+
+                        a.hd-btn1(href="#act")
+                    .left.input_box#input1
+                        .hd-logo(onclick="goo('',1)")
+                        h2 注册
+
+                        +vd
+
+
+                        .hd-btn.active(onclick="sign(1)") 激活账户
+
+                .net.clearfix
+                    .net-item
+                        p 澳门新葡京<br>官方线上网站
+                    .net-item
+                        p 2005年7月<br>香港上市企业
+                    .net-item
+                        p 累计注册人<br>数523万人
+                    .net-item
+                        p 阿里
+                            br
+                            span 认证企业
+                    .net-item
+                        p 腾讯
+                            br
+                            span 认证企业
+                    .net-item
+                        p 澳门博彩监督
+                            br
+                            span 协调局认证企业
+
+            .bg-cont2
+                .content
+                    a#act(name="act")
+                        .act.clearfix
+                            h1 激活大礼包
+                            .act-item
+                                p 银行卡充值最高赠送
+                                h3 900000元
+                                h2 01
+                                h4 银行卡充值送礼
+                            .act-item
+                                p 激活首充最高赠送
+                                h3 99000元
+                                h2 02
+                                h4 激活优惠独享
+                            .act-item
+                                p 随机抽取用户赠送
+                                h3 999元
+                                h2 03
+                                h4 系统随机好礼
+                        .act.clearfix
+                            h1 合并优势
+                            .act-line.clearfix
+                                .act-check 官网资金安全可靠
+                                .act-check 官网游戏公平公正
+                                .act-check 取款资金合规合法
+                            .act-box.clearfix
+                                .act-btn 百家乐
+                                .act-btn 体育
+                                .act-btn 棋牌/彩票
+                                .act-btn 电子游戏
+                                .act-btn 官方认证
+                    .account.clearfix.input_box#input2
+                        h1 限时优惠激活
+                        .tit 限时
+                            br
+                            span 1小时
+                        a.account-l(href="#act")
+                        .account-r
+                            +vd
+
+                            .hd-btn.active(onclick="sign(2)") 立即激活
+                    .btn-big(onclick="play()") 免费试玩　测试一下今日运气
+                    .hd-logo.logo-bottom(onclick="goo('',1)")
+        .fix-box(onclick="downlaod()")
+            .txt
+                p
+                    span 下载APP最高送
+                    b 999
+                    span 元
+                p.pp 优惠限定: 
+                    i 农历27-正月15
+            .download 立即下载
+            .img
+        #wgServiceBar
+        script(src='https://xpj.imagebei.com/hd/service_bar/js/sideBar.js?v2')
+        script(src="https://s5.cnzz.com/z_stat.php?id=1276028449&web_id=1276028449")
+        script(src="https://s5.cnzz.com/z_stat.php?id=1276099727&web_id=1276099727")

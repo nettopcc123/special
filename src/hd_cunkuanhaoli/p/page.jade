@@ -1,0 +1,94 @@
+//link(rel='stylesheet', href='https://xpj.imagebei.com/hd/hd_cunkuanhaoli/css/app.css')
+.yhhd
+    .hd-banner
+        div.hd-time 活动时间：即日起-结束时间以官网通知为准
+        div.hd-szW
+            div.hd-szL
+                p 目前送出金额
+                h2#hd-num1 99999999
+            div.hd-szR
+                p 目前参与人数
+                h2#hd-num2 1253
+    .hd-wrap.hd-mt22
+        h2.hd-w30 新会员专享5重豪礼
+        div.hd-con 为回馈广大用户，澳门新葡京特推出“<b>新会员专享存款5重豪礼</b>”活动，新用户存款即可登录澳门新葡京官网领取礼金，存款越多送越多，赠送比例高达50%；<br>举例说明：如用户首存金额为1000元，赠红利30%，则用户需要达到的有效投注额为：（1000+300）×25=32500
+        ul.hd-cul
+            li
+                div.hd-num 1
+                div.hd-m 
+                    p.hd-mt 
+                        span.hd-mtl 首存送30%
+                        span.hd-mtr 赠送金额高达1999元
+                    p.hd-mb 
+                        span.hd-mbl 存款≥100元
+                        span.hd-mbr 取款=（存款+优惠）x25
+                div.hd-r
+            li
+                div.hd-num 2
+                div.hd-m 
+                    p.hd-mt 
+                        span.hd-mtl 次存送35%
+                        span.hd-mtr 赠送金额高达1999元
+                    p.hd-mb 
+                        span.hd-mbl 存款≥100元
+                        span.hd-mbr 取款=（存款+优惠）x25
+                div.hd-r
+            li
+                div.hd-num 3
+                div.hd-m 
+                    p.hd-mt 
+                        span.hd-mtl 三存送40%
+                        span.hd-mtr 赠送金额高达1999元
+                    p.hd-mb 
+                        span.hd-mbl 存款≥100元
+                        span.hd-mbr 取款=（存款+优惠）x25
+                div.hd-r 
+            li
+                div.hd-num 4
+                div.hd-m 
+                    p.hd-mt 
+                        span.hd-mtl 四存送45%
+                        span.hd-mtr 赠送金额高达1999元
+                    p.hd-mb 
+                        span.hd-mbl 存款≥100元
+                        span.hd-mbr 取款=（存款+优惠）x25
+                div.hd-r 
+            li
+                div.hd-num 5
+                div.hd-m 
+                    p.hd-mt 
+                        span.hd-mtl 五存送50%
+                        span.hd-mtr 赠送金额高达1999元
+                    p.hd-mb 
+                        span.hd-mbl 存款≥100元
+                        span.hd-mbr 取款=（存款+优惠）x25
+                div.hd-r 
+
+    .hd-wrap
+            h2.hd-w20 活动规则
+            ul.hd-gzul
+                li  首次存款指第一笔投注之前的单笔金额，申请领取礼金7天内进行存款视为有效。
+                li  本优惠无法与首存及其他优惠活动同时享受，另外本优惠产生有效投注额不参与洗码优惠及积分优惠。
+                li  玩家充值后请在下注前联系在线客服或专员申请相应礼金，如在充值7天后未联系申请优惠，视为主动放弃优惠，不再做添加处理。
+                li  为了公平游戏，您在提取任何现金前需要有效投注额达到规定的要求即可申请取款，彩票游戏不计算有效投注额。
+                li  此优惠只适用一个账户的玩家，相同姓名、电话号码、地址、邮箱、支付方式及ip都只可享受一次。
+                li  若发现玩家有套利行为，将取消参与资格，并扣除盈利金额。
+                li  为了避免文字的理解差异，澳门新葡京保留以上方案的修订权。
+
+
+script.
+    function gitNum(num){
+        var shuziA= null,shuziB= null,shuziC=null
+        var ts=parseInt((new Date().getTime()-new Date('2018-07-16').getTime())/(24*60*60*1000));
+        var arrA=[13,10,5,7,19,14,26];
+        var d = new Date().getDay();
+        shuziC = arrA[d];
+        for(var i=0;i<ts;i++){
+            num+=arrA[i%7]
+        }
+        return num
+    }
+    window.onload=function(){
+        document.getElementById('hd-num1').innerHTML = gitNum(195025)
+        document.getElementById('hd-num2').innerHTML = gitNum(252)
+    }

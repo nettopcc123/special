@@ -1,0 +1,416 @@
+@charset "UTF-8"
+
+$gold = #a26c1a
+html
+    font-size 50px
+    background #201f52
+*
+    box-sizing border-box
+    margin 0
+    font-size inherit
+a[title='站长统计']
+body > a
+    display none
+html,body,header,section,footer,dl,dt,dd,p,h1,h2,h3,h4,h5,h6
+    margin 0
+    border 0
+    padding 0
+    font-style normal
+body
+    color #fff
+    margin 0
+    font-size .3rem
+    text-align justify
+    line-height 1.6
+    font-family -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
+    overflow-x hidden
+.dom
+    position fixed
+    top 0
+    width 100%
+    height 14rem
+    overflow hidden
+.show
+    .img_bg
+        opacity 1
+    .bg
+        transform translate3d(0,5rem,0)
+    .icon
+        opacity 1
+        transform none
+    .sj
+        z-index 3
+        opacity 1
+        transform translate3d(0,0,0)
+    h1,h2,.btn
+        opacity 1
+.img_bg
+    position absolute
+    top 0
+    width 100%
+    height 4rem
+    background url("../img/body_bg.jpg") no-repeat center top/cover
+    transition .5s .8s
+    opacity 0
+.bg
+    position absolute
+    z-index 2
+    width 100%
+    height 100%
+    background #fff
+    top 0
+    transform translate3d(0,15rem,0)
+    transition .4s .1s ease-in
+    &::after
+        z-index 2
+        background #fff
+    &::after
+    &::before
+        content ''
+        width 100%
+        height 2rem
+        position absolute
+    &::before
+        z-index -1
+        border-radius 50%
+        background #fff
+        margin-top -1rem
+        transform scale(1.2)
+        box-shadow inset 0 0 .2rem #777
+.icon
+    position absolute
+    z-index 9
+    top 2.6rem
+    width 2rem
+    height 2rem
+    background #580089 url("../img/icon.png") no-repeat center/ contain
+    left 50%
+    box-shadow 0 0 .1rem .05rem rgba(0,0,0,.2)
+    border-radius .3rem
+    margin-left -1rem
+    transform scale(.1,1)
+    opacity 0
+    transition .3s 1.2s
+
+.sj
+    position absolute
+    z-index 1
+    width 100%
+    height 40%
+    bottom 0
+    background url("../img/sj1.png?v2") no-repeat center bottom/contain
+    opacity .6
+    transition transform .4s .5s ease-out, opacity 1s 1s ease-in
+    transform translate3d(0,6rem,0)
+
+.ios_btn
+    position fixed
+    display none
+    z-index 8
+    top 0
+    right 0
+    padding .4rem
+    text-decoration underline
+    &::before
+        content ''
+        display inline-block
+        width .4rem
+        height .4rem
+        background url("../img/ico_jc.svg") no-repeat center top/90%
+        margin-right .1rem
+        vertical-align middle
+.show_pop .ios_pop
+    transform translate3d(0,0,0)
+    opacity 1
+.ios_pop
+    position fixed
+    z-index 18
+    top 0
+    left 0
+    width 100%
+    height 100%
+    padding 1rem .6rem
+    background #fff
+    color #555
+    text-align center
+    overflow auto
+    -webkit-overflow-scrolling: touch
+    transform translate3d(0,110%,0)
+    opacity .6
+    transition transform .5s ease-in, opacity .5s .5s ease-in-out
+    .close
+        position fixed
+        right .5rem
+        top .5rem
+        width .5rem
+        height .5rem
+        &::after
+            transform rotate(45deg)
+        &::before
+            transform rotate(-45deg)
+        &::after
+        &::before
+            content ''
+            width .5rem
+            height 2px
+            background #888
+            position fixed
+            top .5rem
+            right .25rem
+    img
+        width 100%
+        margin .1rem 0
+    h4,h5
+        font-size .3rem
+        font-weight 400
+    h4
+        padding-top .1rem
+        position relative
+        &::before
+            content ''
+            display block
+            height .2rem
+            background url("../img/arr_img.png") no-repeat center/contain
+    h6
+        font-weight 300
+        font-size .28rem
+        color $gold
+    .logo
+        margin .2rem 0
+        height 1rem
+        display block
+        background url("../img/logo.svg") no-repeat center/contain
+
+.code_box
+    position absolute
+    text-align center
+    z-index 9
+    top 46%
+    left 50%
+    color $gold
+    transform translate(-50%,-50%)
+    display none
+    h3
+        font-size .6rem
+        font-weight 300
+        padding .3rem 0
+    .box
+        width 2.5rem
+        height 2.5rem
+        margin 0 auto
+        border 1px solid #999
+        background url("../img/app_down.png") no-repeat center/90%
+
+
+
+
+.update
+    position absolute
+    z-index 9
+    left 50%
+    top 44%
+    width 5.4rem
+    transition .3s
+    color $gold
+    text-align center
+    transform translate(-50%,-50%)
+    h1
+        transition .5s 2s ease-in-out
+    h1,h2
+        font-weight 600
+        font-size .45rem
+    h2
+        transition .5s 2.4s
+        font-weight 300
+        span
+            margin 0 .2rem
+
+    .btn
+        transition 1.8s 2.5s ease-in-out
+        margin-top .3rem
+        text-align center
+        border 1px solid $gold
+        padding .1rem 0
+        border-radius .4rem
+        display block
+        text-decoration none
+        color $gold
+
+
+h1,h2,.btn
+    opacity 0
+
+.butterbar.hide {
+    display: none !important;
+}
+.butterbar {
+    height: 1px;
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+    width: 100%;
+}
+
+.butterbar .bar {
+    background-color: #23b7e5;
+    height: 0;
+    text-indent: -9999px;
+    position: absolute;
+    width: 100%;
+}
+
+.butterbar .bar:before {
+    background-color: inherit;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    right: 50%;
+}
+
+.butterbar.active {
+    -webkit-animation: changebar 2.25s infinite .75s;
+    -moz-animation: changebar 2.25s infinite .75s;
+    animation: changebar 2.25s infinite .75s
+}
+
+.butterbar.active .bar {
+    -webkit-animation: changebar 2.25s infinite;
+    -moz-animation: changebar 2.25s infinite;
+    animation: changebar 2.25s infinite
+}
+
+.butterbar.active .bar:before {
+    -webkit-animation: movingbar .75s infinite;
+    -moz-animation: movingbar .75s infinite;
+    animation: movingbar .75s infinite
+}
+
+@-webkit-keyframes movingbar {
+    0% {
+        right: 50%;
+        left: 50%
+    }
+
+    99.9% {
+        right: 0;
+        left: 0
+    }
+
+    100% {
+        right: 50%;
+        left: 50%
+    }
+}
+
+@-moz-keyframes movingbar {
+    0% {
+        right: 50%;
+        left: 50%
+    }
+
+    99.9% {
+        right: 0;
+        left: 0
+    }
+
+    100% {
+        right: 50%;
+        left: 50%
+    }
+}
+
+@keyframes movingbar {
+    0% {
+        right: 50%;
+        left: 50%
+    }
+
+    99.9% {
+        right: 0;
+        left: 0
+    }
+
+    100% {
+        right: 50%;
+        left: 50%
+    }
+}
+
+@-webkit-keyframes changebar {
+    0% {
+        background-color: #23b7e5
+    }
+
+    33.3% {
+        background-color: #23b7e5
+    }
+
+    33.33% {
+        background-color: #fad733
+    }
+
+    66.6% {
+        background-color: #fad733
+    }
+
+    66.66% {
+        background-color: #7266ba
+    }
+
+    99.9% {
+        background-color: #7266ba
+    }
+}
+
+@-moz-keyframes changebar {
+    0% {
+        background-color: #23b7e5
+    }
+
+    33.3% {
+        background-color: #23b7e5
+    }
+
+    33.33% {
+        background-color: #fad733
+    }
+
+    66.6% {
+        background-color: #fad733
+    }
+
+    66.66% {
+        background-color: #7266ba
+    }
+
+    99.9% {
+        background-color: #7266ba
+    }
+}
+
+@keyframes changebar {
+    0% {
+        background-color: #23b7e5
+    }
+
+    33.3% {
+        background-color: #23b7e5
+    }
+
+    33.33% {
+        background-color: #fad733
+    }
+
+    66.6% {
+        background-color: #fad733
+    }
+
+    66.66% {
+        background-color: #7266ba
+    }
+
+    99.9% {
+        background-color: #7266ba
+    }
+}

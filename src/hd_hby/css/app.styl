@@ -1,0 +1,340 @@
+@charset "UTF-8"
+html
+    font-size 100px
+body
+    margin 0
+    font-size 14px
+    font-family -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
+* {
+    padding: 0
+    margin: 0
+}
+.yhhd
+    max-width 100%
+    margin 0 auto 0
+    background url("../img/bgf.jpg") center bottom no-repeat #ffffff  
+    background-size 100% auto
+    .hdHby
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        overflow-y: hidden;
+        position fixed;
+        z-index: 1000
+        display: none;
+        top 0
+        li
+            position: absolute;
+            animation: all 3s linear;
+            top:-100px;
+            list-style: none;
+            -webkit-tap-highlight-color:  rgba(0,0,0,0);
+            width 0.48rem
+            height 0.69rem
+            cursor pointer
+            span
+                display: block;
+                width 0.48rem
+                height 0.69rem
+    .hby-mo
+        position: fixed;
+        top: -175px;
+        left: 0%
+        width: 60px
+        height 180px
+        background: url("../img/tipbg.png") center bottom no-repeat ;
+        background-size contain
+        color #ffffff
+        z-index: 10000;
+        border-radius: 15px
+        text-align: center
+        transition: top 2s;
+        -moz-transition: top 2s;
+        -webkit-transition: top 2s;
+        -o-transition: top 2s
+    .hb-open
+        position: fixed;
+        z-index 10;
+        background rgba(237,26,25,0.5);
+        border-radius: 0.5rem
+        color #fff
+        width 0.8rem;
+        text-align: center
+        padding 0px
+        height 0.3rem
+        line-height: 0.3rem
+    .hby-alert
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 6rem
+        height 2rem
+        margin-top:-1rem
+        margin-left:-3rem
+        z-index 1002
+        background rgba(0,0,0,0.5);
+        color #fff;
+        padding 0.2rem
+        border-radius 0.5rem;
+        text-align: center;
+    .totWin
+        position: fixed;
+        top: 0;
+        width: 100%
+        height 0;
+        background: url("../img/gx.png") center bottom no-repeat ;
+        padding-top:3rem;
+        padding-bottom:4rem;
+        background-size contain
+        z-index 1003
+        color #de4331;
+        font-size: 0.4rem;
+        text-align: center;
+    .hby-cover
+        background:rgba(0,0,0,0.8);
+        left:0;
+        top:0;
+        filter:"Alpha(opacity=80)";
+        opacity:0.8;
+        display:block;
+        width:100%;
+        position:fixed;
+        z-index:10;
+        width: 100%;
+        height: 100%;
+    .hd-pop
+        position: fixed;
+        top: 50%;
+        left 50%;
+        width: 4.6rem;
+        height: 2.6rem;
+        margin-left -2.5rem;
+        margin-top: -1.5rem;
+        z-index 1003
+        color #de4331;
+        font-size: 0.4rem;
+        text-align: center;
+        background rgba(255,255,255,0.9)
+        border-radius 0.1rem;
+        cursor pointer
+        padding 0.2rem;
+        p
+            padding-top: 0.5rem;
+            line-height: 0.5rem
+            height 1rem;
+            font-size: 0.26rem
+
+    // 领红包
+    @keyframes winTip
+        from 
+            top: 0px
+        to
+            top: 30px
+    @-moz-keyframes winTip /* Firefox */
+        from 
+            top: 5px
+        to
+            top: 30px
+    @-webkit-keyframes winTip /* Safari 和 Chrome */
+        from 
+            top: 5px
+        to
+            top: 30px
+
+    // 红包结束
+    @keyframes winTipEnd
+        from 
+            top: 30px
+            left: 0px
+        to
+            top: 50%
+            left: 50%
+    @-moz-keyframes winTipEnd /* Firefox */
+        from 
+            top: 30px
+            left: 0px
+        to
+            top: 50%
+            left: 50%
+    @-webkit-keyframes winTipEnd /* Safari 和 Chrome */
+        from 
+            top: 30px
+            left: 0px
+        to
+            top: 50%
+            left: 50%
+    
+    // 红包雨
+    @keyframes retPack
+        from 
+            top: -50px
+        to
+            top: 120%;
+    @-moz-keyframes retPack /* Firefox */
+        from 
+            top: -50px
+        to
+            top: 120%;
+    @-webkit-keyframes retPack /* Safari 和 Chrome */
+        from 
+            top: -50px
+        to
+            top: 120%;
+
+    
+
+    .hd-banner
+        width 100%
+        background url("../img/bgt.jpg") center top no-repeat 
+        background-size cover
+        height 0
+        padding-top 28%
+        padding-bottom 29.2%
+        font-size 0.24rem
+        position relative
+    .hd-wbg
+       background url("../img/bgf.jpg") center bottom no-repeat 
+       background-size 100% auto
+       width 100%
+       overflow hidden
+       padding-bottom 1.6rem
+    .hd-wrap
+        width 1140px
+        font-size 0.24rem
+        background: #ffffff
+        box-shadow: 0px 0px 10px #dedecd
+        color #333333
+        border-radius 0.3rem
+        margin 0px auto
+        padding 0.3rem
+    .hd-tl
+        width 30%
+        float left
+        position relative
+        z-index 2
+    .hd-ren
+        width 4.2rem
+        height 4.51rem
+        background url("../img/ren.png") center center no-repeat 
+        background-size contain
+        margin-top -0.6rem
+        animation: zy 2.5s .15s linear infinite;
+    .hd-tr
+        width 60%
+        float right
+        position relative
+        z-index 1
+    .hd-butLogin
+        background: linear-gradient(#ff745d, #c40101)!important
+        color #ffffff!important
+        width 3rem
+        line-height: 0.5rem
+        border-radius: 0.3rem
+        text-align: center
+        margin-top 0.3rem
+        margin-left 15%
+        border 1px solid #ffffff
+        box-shadow: 0px 0px 10px #dedecd
+        font-size: .24rem
+        cursor: pointer
+    .hd-butDis
+        background: linear-gradient(#bdbdbd, #969595)!important
+    .hd-tit
+        margin 0rem auto 0.2rem
+        text-align center
+        clear both
+        overflow hidden
+        h2
+            color #333333
+            font-size: 0.3rem
+        b
+            height 6px
+            background #ffd63a
+            width 0.8rem
+            display: block
+            border-radius: 0.5rem
+            margin 0.08rem auto 0
+    .hd-rem
+        text-align left
+        color #666666
+        padding-bottom 0.1rem
+        line-height: 0.38rem
+        font-size: 0.24rem
+    .hd-tcn
+        text-align left
+        color #333333
+        line-height: 0.4rem
+    .hd-clear
+        clear both
+    .hd-ftit
+        width 5rem
+        margin 1.2rem auto -0.25rem
+        background #ffffff
+        border-radius 0.5rem
+        box-shadow: 0px 0px 10px #dedecd
+        padding 0.05rem
+        display block
+        overflow hidden
+        position relative
+        z-index 2
+        li
+            background: #ffffff
+            color #f34b40
+            border-radius 0.5rem
+            width 50%
+            float left
+            list-style none
+            text-align: center
+            line-height: 0.5rem
+            font-size: 0.24rem
+            cursor: pointer
+    .hd-cur
+        background: linear-gradient(#ff745d, #c40101)!important
+        color #ffffff!important
+    .hd-hid
+        display: none
+    .hd-gz
+        width 94%
+        margin: 0.2rem auto 0
+        li
+            list-style circle
+            color #333333
+            font-size: 0.2rem
+            line-height: 0.36rem
+            list-style-type decimal
+            padding-bottom: 0.08rem
+
+    .hd-conw
+        overflow hidden
+        position relative
+        z-index 1
+        margin: 0.2rem auto 0
+        width 100%
+    .hd-ulCon
+        width 30%
+        float left
+        overflow hidden
+        li
+            list-style none
+            text-align center
+            line-height 0.6rem
+            font-size: 0.2rem 
+            color #666666
+            &:first-child
+                color #333333
+                font-weight bold
+    .hd-ucw1
+        width 40%
+@keyframes zy
+    10%
+        transform: rotate(15deg)
+    20%
+        transform: rotate(-10deg)
+    30%
+        transform: rotate(10deg)
+    40%
+        transform: rotate(-15deg)
+    50%,100%
+        transform: rotate(0deg)
+@import "mob"
+

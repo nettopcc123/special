@@ -1,0 +1,57 @@
+link(rel='stylesheet', href='https://xpj.imagebei.com/hd/hd_xinggan/css/app.css')
+.yhhd
+    .hd-banner
+        .hd-tit
+            .hd-wrap
+                .logo
+                .tit-right
+                    span 澳门新葡京联手
+                    span.gold 国内知名模特
+                    span 公司，其专注高端外围女模特招聘领域，不仅资源丰富，人脉范围宽广，业内有优良口碑，
+                    span.gold 让网络美女，变成您的真实玩伴；性感尤物，不只是看看！您心动了吗？
+    .container
+        .hd-wrap
+            h1
+                span 申请流程
+            .hd-box
+                .hd-item
+                    .img
+                    p NO.1 达到积分
+                    .arrow
+                .hd-item
+                    .img
+                    p NO.2 点击兑换
+                    .arrow
+                .hd-item
+                    .img
+                    p NO.3 等待专属经理联系
+                    .arrow
+                .hd-item
+                    .img
+                    p NO.4 尤物照片选择
+                    .arrow
+                .hd-item
+                    .img
+                    p NO.5 确认空投
+            h1
+                span 美艳女郎
+            .photo
+                .shop
+                    .shop-item(onclick="goSign()")
+                        p 新葡京积分商城
+                        span 积分兑好礼
+                        .btn-shop 立即前往 >>
+
+
+    script.
+        function goSign() {
+            if (location.href.indexOf('file://') < 0) {
+                var u = "/#/shop";
+                if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+                    u = '/m/index.html#/shop';
+                }
+                top.location.href = u;
+            } else {
+                comHead("积分商城","shop")
+            }
+        }

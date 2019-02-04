@@ -1,0 +1,64 @@
+//link(rel='stylesheet', href='https://xpj.imagebei.com/hd/hd_shoucunxian/css/app.css')
+.yhhd
+    .hd-banner
+        div.hd-btop
+            P.hd-btop-f1 新用户
+            P.hd-btop-f2 首存
+                b 双重
+                | 豪礼
+            P.hd-btop-f3 最高送 
+                b 9999 
+                | 元
+
+        div.hd-bbot
+            h2.hd-bbot-f1 开户共享红包礼金
+            P.hd-bbot-f2 新会员开户成功后首次存款(只需20元)<br>即可选择享受20%或50%的开户红包礼金
+            h2.hd-bbot-f3 最高 9999 元
+            a.hd-bbot-f4(onclick="goSign()") 马上开户领钱
+
+
+    .hd-wbg
+        .hd-wrap
+            ul.hd-ulTit
+                li  首存金额
+                li  优惠比例
+                li  优惠金额
+                li  取款要求
+                li  最高赠送
+            ul.hd-ulCon
+                li  1000
+                li  20%
+                li  200
+                li   
+                    p (1000+200)×12=14400
+                    p.hd-yqrm (存款+优惠)×倍水=流水
+                li  9999元
+            ul.hd-ulCon
+                li  1000
+                li  50%
+                li  500
+                li
+                    p (1000+500)×25=37500
+                    p.hd-yqrm (存款+优惠)×倍水=流水
+                li  9999元
+            .hd-clear    
+            h2.hd-tgz 优惠规则与条款
+            ul.hd-gz
+                li 	不限次数，存1000元，系统送1%即为10元，到账金额为1010元。
+                li 	存款到账后无需申请系统自动发放至账号内；
+                li 	赠送彩金需存款+彩金1倍流水取款；
+                li 	如发现任何人/团体/组织以不诚实的方式合伙套取红利或其他利益，账号及所有户内余额将被取消；
+                li 	澳门新葡京网将保留对本次活动的修改、订正和最终解释权。
+
+    script.
+        function goSign() {
+            if(location.href.indexOf('file://')<0){
+                if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+                    top.location.href = '/m/index.html#/service_online';
+                } else {
+                    window.open('https://e-136970.chatnow.meiqia.com/dist/standalone.html');
+                }
+            }else {
+                comHead('在线客服','kefu');
+            }
+        }

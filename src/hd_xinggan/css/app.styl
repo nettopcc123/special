@@ -1,0 +1,161 @@
+@charset "UTF-8"
+html
+    font-size 100px
+body
+    margin 0
+    font-family -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
+
+
+$c1=#f9c37d
+$c2=#d656df
+$c3=#cf7c27
+$c4=#bf854a
+$c5=#bb8925
+
+
+
+.yhhd
+    font-size .16rem
+    max-width 19.2rem
+    overflow-x hidden
+    margin 0 auto
+    line-height 1.4
+    background #241e21
+    color $c1
+    *
+        box-sizing border-box
+        margin 0
+    .hd-banner
+        height 8.4rem
+        background url("../img/pc_banner.png") no-repeat center top/19.2rem
+        position relative
+        .hd-tit
+            width 100%
+            padding .3rem 0
+            line-height .3rem
+            color #fff
+            background rgba(0,0,0,0.7)
+            position absolute
+            left 0
+            bottom -.6rem
+            .logo
+                width 20%
+                height 1rem
+                float left
+                background url('../img/logo.png') no-repeat center / 2rem
+            .tit-right
+                width 80%
+                padding .2rem .2rem 0
+                float left
+            .gold
+                color $c1
+    .container
+        width 100%
+        padding-top 1rem
+    .hd-wrap
+        max-width 12rem
+        margin 0 auto
+        &:after
+            content ''
+            display block
+            clear both
+            visibility hidden
+        .hd-box
+            width 100%
+            color #eaca93
+            text-align center
+            margin-bottom .3rem
+            &:after
+                content ''
+                display block
+                clear both
+                visibility hidden
+            .hd-item
+                width 20%
+                float left
+                position relative
+                &:nth-of-type(2)
+                    .img
+                        background-image url('../img/pro2.png')
+                &:nth-of-type(3)
+                    .img
+                        background-image url('../img/pro3.png')
+                &:nth-of-type(4)
+                    .img
+                        background-image url('../img/pro4.png')
+                &:nth-of-type(5)
+                    .img
+                        background-image url('../img/pro5.png')
+                .arrow
+                    width .4rem
+                    height .4rem
+                    background url('../img/arrow.png') no-repeat center /contain
+                    position absolute
+                    right -.2rem
+                    top .4rem
+                .img
+                    width 1.3rem
+                    height 1.3rem
+                    display inline-block
+                    border 2px solid $c1
+                    border-radius 50%
+                    box-shadow 0px 0px 0px 15px #251d1f inset
+                    background #524032 url('../img/pro1.png') no-repeat center /.5rem
+                    margin-bottom .1rem
+        .photo
+            width 80%
+            height 8rem
+            margin 0 auto 1rem
+            background #161314 url('../img/girl.png') no-repeat center top /100%
+            padding-top 6.4rem
+            .shop
+                padding .3rem 0 .5rem
+                text-align center
+                .shop-item
+                    width 3rem
+                    height 1rem
+                    padding-left 1.2rem
+                    text-align left
+                    display inline-block
+                    background url('../img/gift.png') no-repeat left center/.9rem
+                    p
+                        font-size .22rem
+                        margin-top .1rem
+                    span
+                        color #666
+                        margin-bottom .04rem
+                        display block
+                    .btn-shop
+                        padding .02rem .2rem
+                        background $c1
+                        display inline-block
+                        border-radius .2rem
+                        color #333
+
+
+    h1
+        text-align center
+        font-size .24rem
+        padding .3rem 0 .4rem
+        &:nth-of-type(2)
+            span
+                background-image url('../img/tit2.png')
+        span
+            display inline-block
+            font-weight normal
+            line-height .3rem
+            width 4.4rem
+            padding 0 0 .3rem
+            background url("../img/tit1.png") no-repeat center bottom/2rem
+            color $c1
+        b
+            display inline-block
+            margin .2rem 0 .3rem
+            color #77dfea
+
+
+
+
+
+@import "mob"
+

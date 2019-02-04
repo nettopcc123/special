@@ -1,0 +1,117 @@
+@charset "UTF-8"
+html
+    font-size 100px
+body
+    margin 0
+    font-family -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
+
+
+$c1=#fff
+$c2=#d656df
+$c3=#cf7c27
+$c4=#bf854a
+$c5=#bb8925
+
+
+
+.yhhd
+    font-size .16rem
+    max-width 19.2rem
+    overflow-x hidden
+    margin 0 auto
+    line-height 1.4
+    background #0c0c32 url("../img/pc_bg.png?v12") no-repeat center top/cover
+    color $c1
+    *
+        box-sizing border-box
+        margin 0
+    .hd-banner
+        height 5rem
+        background url("../img/pc_banner.png?v12") no-repeat center/8rem
+    .container
+        width 100%
+        .hd-wrap
+            max-width 12rem
+            margin 0 auto
+            font-size .24rem
+            .hd-box
+                width 100%
+                height 5.4rem
+                background url('../img/box_bg.png') no-repeat center top /110% 100%
+                color #eaca93
+                .hd-item
+                    border-radius .1rem
+                    padding 1rem 3rem
+                    position relative
+                    &:after
+                        content ''
+                        display block
+                        clear both
+                        visibility hidden
+                    h2
+                        width 2rem
+                        line-height .4rem
+                        font-size .26rem
+                        border 3px solid #dccba5
+                        background #212045
+                        border-radius .1rem
+                        color #baa594
+                        text-align center
+                        position absolute
+                        left 50%
+                        top .2rem
+                        transform translateX(-50%)
+
+                    .hd-single
+                        width 46%
+                        padding .2rem
+                        line-height .24rem
+                        font-size .14rem
+                        text-align center
+                        background #1f1a20 url('../img/item_bg.png') no-repeat left top / 100% 100%
+                        float left
+                        &:nth-of-type(2)
+                            margin-left .3rem
+                            .img
+                                background-image url('../img/a2.png')
+
+                        .img
+                            height 1.4rem
+                            margin-bottom .3rem
+                            background url('../img/a1.png') no-repeat center / 1.2rem
+                        .bigfont
+                            color #fbe9d0
+                            font-size .16rem
+            .rules
+                width 100%
+                padding 0rem 1.5rem 1rem
+                margin 0 0 .8rem
+                background url('../img/rules.png') no-repeat left top / 100% 100%
+                ul　
+                    width 100%
+                    font-size .18rem
+                    backround #16121a
+                    color #a1846f
+
+                    li
+                        //list-style-type none
+                        line-height .4rem
+
+            h1
+                text-align center
+                font-size .24rem
+                padding .3rem 0 .8rem
+                span
+                    display inline-block
+                    font-weight normal
+                    line-height .5rem
+                    width 4.4rem
+                    background url("../img/title.png") no-repeat center bottom/100%
+                    color #baa594
+                b
+                    display inline-block
+                    margin .2rem 0 .3rem
+                    color #77dfea
+
+@import "mob"
+
